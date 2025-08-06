@@ -1,0 +1,19 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "homepage"
+    label: "Homepage Content"
+    files:
+      - file: "index.html"
+        label: "Main Page"
+        name: "mainpage"
+        fields:
+          - { label: "Things to Do", name: "things", widget: "text" }
+          - { label: "Best Food Spots", name: "food", widget: "text" }
+          - { label: "Spa Info", name: "spa", widget: "text" }
+          - { label: "WhatsApp Link", name: "whatsapp", widget: "string" }
